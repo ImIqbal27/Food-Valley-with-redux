@@ -12,8 +12,9 @@
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
   }
   
-  .iteamsdetails{
+  .itemsdetails{
       max-width: 800px;
+      padding: 30px;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -37,7 +38,7 @@
   }
   
   @media (max-width:772px){
-      .iteamsdetails{
+      .itemsdetails{
           flex-direction: column;
           align-items: center;
           justify-content: center;
