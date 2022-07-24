@@ -37,7 +37,7 @@ const Header = () => {
     const total = () => {
         let price = 0;
         getData.map((ele, k) => {
-            price = ele.price *ele.qnty + price;
+            price = ele.price * ele.qnty + price;
 
         });
         setPrice(price)
@@ -55,7 +55,10 @@ const Header = () => {
                 <Container>
                     <NavLink to='/' className="text-decoration-none text-light mx-3"> <h4>Food Valley </h4></NavLink>
                     <Nav className="me-auto">
-                        <NavLink to='/' className="text-decoration-none text-light">Home</NavLink>
+                        <NavLink to='/' className="text-decoration-none text-light px-2">Home</NavLink>
+                        <NavLink to='/' className="text-decoration-none text-light px-2">Blog</NavLink>
+                        <NavLink to='/' className="text-decoration-none text-light px-2">Contact US</NavLink>
+                        <NavLink to='/' className="text-decoration-none text-light px-2">About US</NavLink>
 
                     </Nav>
                     <Badge badgeContent={getData.length} color="success"
@@ -129,7 +132,7 @@ const Header = () => {
                                             })
                                         }
 
-                                       <h4><p>Total {price}</p></h4>
+                                        <h4><p>Total {price}</p></h4>
                                     </tbody>
 
 
